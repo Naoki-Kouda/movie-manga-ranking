@@ -280,6 +280,14 @@
       text-align: center;
     }
 
+    .visitor-counter {
+      display: block;
+      margin-top: 10px;
+      color: #9a938b;
+      font-variant-numeric: tabular-nums;
+      letter-spacing: .16em;
+    }
+
     @media (max-width: 620px) {
       main { width: min(100% - 24px, var(--max-width)); }
       .controls { grid-template-columns: 1fr; }
@@ -337,7 +345,12 @@
     </section>
   </main>
 
-  <footer>SINCE 2015 · KOUDA</footer>
+  <footer>
+    <span>SINCE 2015 · KOUDA</span>
+    <span class="visitor-counter">VISITS <span id="visitor-count">14,033</span></span>
+  </footer>
+
+  <script src="visitor-counter.js" defer></script>
 
   <script>
     // 更新するときは、この一覧へ「点数：作品名」の形式で追加・修正します。

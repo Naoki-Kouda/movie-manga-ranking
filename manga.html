@@ -783,6 +783,14 @@
       background: linear-gradient(180deg, transparent, rgba(6, 9, 14, .9));
     }
 
+    .visitor-counter {
+      display: block;
+      margin-top: var(--space-3);
+      color: var(--ink-mid);
+      font-variant-numeric: tabular-nums;
+      letter-spacing: .16em;
+    }
+
     /* =========================================================
        Responsive
        ========================================================= */
@@ -926,7 +934,12 @@
     </section>
   </main>
 
-  <footer>SINCE 2015 · KOUDA</footer>
+  <footer>
+    <span>SINCE 2015 · KOUDA</span>
+    <span class="visitor-counter">VISITS <span id="visitor-count">14,033</span></span>
+  </footer>
+
+  <script src="visitor-counter.js" defer></script>
 
   <script>
   /* ==========================================================
