@@ -177,7 +177,7 @@
 
     .movie-list {
       display: grid;
-      gap: 8px;
+      gap: 0;
       margin: 0;
       padding: 0;
       list-style: none;
@@ -187,8 +187,8 @@
       display: grid;
       grid-template-columns: 56px 86px minmax(0, 1fr);
       align-items: center;
-      min-height: 76px;
-      padding: 10px 18px;
+      min-height: 36px;
+      padding: 3px 18px;
       border: 1px solid transparent;
       border-bottom-color: var(--line);
       transition: background .18s ease, border-color .18s ease, transform .18s ease;
@@ -211,13 +211,14 @@
     .score {
       justify-self: start;
       min-width: 62px;
-      padding: 5px 8px;
+      padding: 3px 8px;
       border: 1px solid #4e422b;
       border-radius: 999px;
       background: var(--accent-dark);
       color: var(--accent);
       font-family: Georgia, serif;
       font-size: 13px;
+      line-height: 1.35;
       font-weight: 700;
       text-align: center;
       font-variant-numeric: tabular-nums;
